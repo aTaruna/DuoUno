@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 384372256181283183}
   - component: {fileID: 7659514899562460178}
   - component: {fileID: 991647038929068412}
+  - component: {fileID: 1845201470662508058}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Point Bul
@@ -91,7 +92,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8858292198727286151}
-  m_Material: {fileID: 13400000, guid: 1afbcd784d5814b48bd17dfffae5c95c, type: 2}
+  m_Material: {fileID: 13400000, guid: 38cc7da5cf8244d43b87c511bb28cb38, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -107,3 +108,16 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1845201470662508058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8858292198727286151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5ff682e4cb5494f97823929460413f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materi: {fileID: 0}

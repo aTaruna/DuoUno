@@ -3,37 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField]
-    GameObject ball, resButton, exButton, highScoreText, scoreText;
+    GameObject highScoreText, scoreText, resButton, exButton;
 
     int score, highScore;
 
-    public int multiplier;
-
-
-    /*public Text highScoreText;
-    public Text scoreText;
-    public Button resButton;
-    public Button exButton;*/
-
+    private int multiplier;
 
     public static GameManager instance;
 
 
     private void Awake()
     {
-        if (instance != null)
-        {
-            Destroy(gameObject);
-            return;
-        }
-        else
+        if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
+
+            //kenapa dont destroy aktif=eror?
+            //DontDestroyOnLoad(gameObject);
+        }
+        else
+        {           
+            Destroy(gameObject);
+            return;
         }
 
         Time.timeScale = 1;
@@ -86,6 +82,6 @@ public class GameManager : MonoBehaviour
 
     public void GameRestart()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+        SceneManager.LoadScene(0);
     }
 }

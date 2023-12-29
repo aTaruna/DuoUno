@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2837986617899944166}
   - component: {fileID: 7008256069640624139}
   - component: {fileID: 2799087913909292453}
+  - component: {fileID: -5513434729183949361}
   m_Layer: 0
   m_Name: TopCap
   m_TagString: Alatas
@@ -91,7 +92,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 111601896266118356}
-  m_Material: {fileID: 13400000, guid: 1afbcd784d5814b48bd17dfffae5c95c, type: 2}
+  m_Material: {fileID: 13400000, guid: 38cc7da5cf8244d43b87c511bb28cb38, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -107,3 +108,16 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-5513434729183949361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111601896266118356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5ff682e4cb5494f97823929460413f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materi: {fileID: 2100000, guid: 3968d2d3fa5b99a4ab478c7ed3240e71, type: 2}

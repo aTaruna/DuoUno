@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
+    public GameObject ktp;
     
 
     private void OnCollisionEnter(Collision collision)
@@ -31,8 +32,18 @@ public class Ball : MonoBehaviour
                 GameManager.instance.GameEnd();
                 break;
 
+
+
             default:
                 break;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("Katup"))
+        {
+            ktp.SetActive(true);
         }
     }
 }

@@ -9,6 +9,7 @@ public class Out : MonoBehaviour
     private AudioSource playerAudio;
     public AudioSource bgm;
 
+
     void Start()
     {
         playerAudio = GetComponent<AudioSource>();

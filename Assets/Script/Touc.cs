@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Touc : MonoBehaviour
 {
+
+    public Material materi;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,4 +17,26 @@ public class Touc : MonoBehaviour
     {
         
     }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("bal"))
+        {
+            GetComponent<MeshRenderer>().material.color= Color.green;
+        }
+    }
+
+    private void OnCollisionExit(Collision other)
+    {
+        if(other.gameObject.CompareTag("bal"))
+        {
+            GetComponent<MeshRenderer>().material.color = Color.white;
+        }
+    }
+
+    /*IEnumerator ChangeColour()
+    {
+        yield return new WaitForSeconds(1.0f);
+        GetComponent<MeshRenderer>().material.color =Color.green;
+    }*/
 }

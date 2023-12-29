@@ -10,6 +10,7 @@ TagManager:
   - Point Seg
   - Point Bul
   - Alatas
+  - Katup
   layers:
   - Default
   - TransparentFX
