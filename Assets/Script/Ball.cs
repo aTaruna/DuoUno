@@ -5,8 +5,24 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     public GameObject ktp;
-    
 
+
+    private void Start()
+    {
+        if(MenuManager.instance != null)
+        {
+            SetColor(MenuManager.instance.WarnaBal);
+        }
+    }
+
+    void SetColor(Color color)
+    {
+        var colorHandler = GetComponent<ColorHandler>();
+        if (colorHandler != null) 
+        {
+            colorHandler.SetColor(color);
+        }
+    }
     private void OnCollisionEnter(Collision collision)
     {
         string tag = collision.gameObject.tag;

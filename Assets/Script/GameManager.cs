@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEditor;
 
 public class GameManager : MonoBehaviour
 {
@@ -22,9 +23,6 @@ public class GameManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-
-            //kenapa dont destroy aktif=eror?
-            //DontDestroyOnLoad(gameObject);
         }
         else
         {           
@@ -81,6 +79,11 @@ public class GameManager : MonoBehaviour
     }
 
     public void GameRestart()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    public void GameMenu()
     {
         SceneManager.LoadScene(0);
     }

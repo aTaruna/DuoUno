@@ -33,10 +33,4 @@ public class Touc : MonoBehaviour
             GetComponent<MeshRenderer>().material.color = Color.white;
         }
     }
-
-    /*IEnumerator ChangeColour()
-    {
-        yield return new WaitForSeconds(1.0f);
-        GetComponent<MeshRenderer>().material.color =Color.green;
-    }*/
 }
